@@ -81,7 +81,7 @@ class message_output_whatsapp extends message_output {
     }
 
     public function config_form($preferences) {
-        // N/A – controlado via settings.php
+        return new stdClass(); 
     }
 
     public function process_form($form, $preferences) {
@@ -89,6 +89,7 @@ class message_output_whatsapp extends message_output {
     }
 
     public function load_data(&$preferences, $userid) {
+        $preferences = new stdClass(); // ✅ evitar que fique nulo
         return true;
     }
 
