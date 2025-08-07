@@ -26,6 +26,21 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
 
+    $settings->add(new admin_setting_configselect(
+    'message_output_whatsapp/api',
+    'API WhatsApp',
+    'Selecione qual API utilizar para envio de mensagens.',
+    'twilio',
+    ['twilio' => 'Twilio', 'evolution' => 'EvolutionAPI']
+));
+
+$settings->add(new admin_setting_configtext('message_output_whatsapp/apiurl', 'URL da API', 'Endpoint da API de envio de mensagens.', ''));
+
+$settings->add(new admin_setting_configtext('message_output_whatsapp/twilio_sid', 'Twilio SID', '', ''));
+$settings->add(new admin_setting_configtext('message_output_whatsapp/twilio_token', 'Twilio Token', '', ''));
+$settings->add(new admin_setting_configtext('message_output_whatsapp/twilio_from', 'Twilio From (whatsapp:+)', '', ''));
+
+
     $settings->add(new admin_setting_configtext('message_whatsapp/accountsid',
                     get_string('accountsid', 'message_whatsapp'),
                     get_string('accountsid_desc', 'message_whatsapp'), '',
