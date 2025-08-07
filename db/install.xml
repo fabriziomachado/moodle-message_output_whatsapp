@@ -4,7 +4,7 @@
     xsi:noNamespaceSchemaLocation="../../../../lib/xmldb/xmldb.xsd"
 >
   <TABLES>
-    <TABLE NAME="message_whatsapp_messages" COMMENT="Keeps track of what emails to send in an email digest">
+    <TABLE NAME="message_output_whatsapp_messages" COMMENT="Keeps track of what emails to send in an email digest">
       <FIELDS>
         <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
         <FIELD NAME="useridto" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
