@@ -41,14 +41,14 @@ $settings->add(new admin_setting_configtext('message_output_whatsapp/twilio_toke
 $settings->add(new admin_setting_configtext('message_output_whatsapp/twilio_from', 'Twilio From (whatsapp:+)', '', ''));
 
 
-    $settings->add(new admin_setting_configtext('message_whatsapp/accountsid',
-                    get_string('accountsid', 'message_whatsapp'),
-                    get_string('accountsid_desc', 'message_whatsapp'), '',
+    $settings->add(new admin_setting_configtext('message_output_whatsapp/accountsid',
+                    get_string('accountsid', 'message_output_whatsapp'),
+                    get_string('accountsid_desc', 'message_output_whatsapp'), '',
                     PARAM_TEXT));
-    $settings->add(new admin_setting_configtext('message_whatsapp/authtoken',
-                    get_string('authtoken', 'message_whatsapp'),
-                    get_string('authtoken', 'message_whatsapp'), '', PARAM_TEXT));
-    $settings->add(new admin_setting_configtext('message_whatsapp/senderno',
-                    get_string('senderno', 'message_whatsapp'),
-                    get_string('senderno', 'message_whatsapp'), '', PARAM_TEXT));
+    $settings->add(new admin_setting_configtext('message_output_whatsapp/authtoken',
+                    get_string('authtoken', 'message_output_whatsapp'),
+                    get_string('authtoken', 'message_output_whatsapp'), '', PARAM_TEXT));
+    $settings->add(new admin_setting_configtext('message_output_whatsapp/senderno',
+                    get_string('senderno', 'message_output_whatsapp'),
+                    get_string('senderno', 'message_output_whatsapp'), '', PARAM_TEXT));
 }
