@@ -24,7 +24,12 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version    = 2022041901;           // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires   = 2021041200;             // Requires this Moodle version.
+$plugin->component = 'message_output_whatsapp';
+$plugin->version = 2025080700;
+$plugin->requires = 2022041900; // Moodle 4.1+
+
 $plugin->component  = 'message_whatsapp';  // Full name of the plugin (used for diagnostics).
 $plugin->maturity  = MATURITY_ALPHA;
+
+
+
