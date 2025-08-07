@@ -25,7 +25,7 @@
 /**
  * Install the email message processor
  */
-function xmldb_message_whatsapp_install() {
+function xmldb_message_output_whatsapp_install() {
     global $DB;
     $result = true;
 
