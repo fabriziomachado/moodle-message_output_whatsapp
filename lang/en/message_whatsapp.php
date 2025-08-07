@@ -22,11 +22,19 @@
  * @author     Abhishek Kumar <abhishek@cognizelearning.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-$string['pluginname'] = 'WhatsApp';
-$string['configtitle'] = 'Configuração do canal WhatsApp';
+$string['pluginname'] = 'WhatsApp Notifications';
+$string['configtitle'] = 'WhatsApp Configuration';
+$string['api'] = 'API WhatsApp';
+$string['api_desc'] = 'Escolha qual API será utilizada para envio das mensagens.';
+$string['apiurl'] = 'URL da API';
+$string['apiurl_desc'] = 'Endpoint de envio de mensagens.';
+$string['twilio_sid'] = 'SID da conta Twilio';
+$string['twilio_token'] = 'Token da conta Twilio';
+$string['twilio_from'] = 'Número autorizado Twilio (whatsapp:+55...)';
 
 
-$string['pluginname'] = 'Whatsapp';
+
+# $string['pluginname'] = 'Whatsapp';
 $string['accountsid'] = 'Account SID';
 $string['accountsid_desc'] = 'Twillio Account SID';
 $string['authtoken'] = 'Auth Token';
